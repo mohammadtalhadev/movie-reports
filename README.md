@@ -2,9 +2,9 @@
 
 This is a small Python program for my assignment. It reads a movies CSV file
 and prints different reports from it. The data is old movies from 1892 to
-1915, taken from this Google Sheet:
+1915, taken from this Excel Sheet:
 
-https://docs.google.com/spreadsheets/d/1SvoN2m96SkFDE7zALEsHnnELrZmzn1cDVqEXMgq-qoM/edit#gid=610360206
+Dataset in the form of excel sheet is also uplaoded check name of Movies_Dataset
 
 ## How to run it
 
@@ -13,7 +13,7 @@ environment variable. On Windows PowerShell:
 
     $env:MOVIES_CSV_PATH = "C:\path\to\movies.csv"
 
-Then run the program from the same folder:
+Then run the program from the same folder some examples commands:
 
     python movies_parser.py -r 1903
     python movies_parser.py -g Comedy
@@ -50,9 +50,6 @@ models.py - the data structures for a movie and for the results
 parser.py - reads the CSV file and makes Movie objects
 reports.py - calculates the reports and prints them
 movies_parser.py - the main program, reads the commands and runs everything
-sample_movies.csv - a small file with a few movies, just for quick testing
+Movies_Dataset.csv - dataset file with movies, for quick testing
 
-## Requirements
 
-Python 3.10 or newer. No other libraries are needed, only the ones that
-come with Python.
